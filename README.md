@@ -1,2 +1,5 @@
-# utils-scripts
-My repository to store some crazy things and gambiarras
+### Utils-scripts
+My repository to store some crazy things and gambiarras :rocket:
+
+### Availabes
+ - [Filter OptinMonster Campaigns](filter-optinmonster-campaigns.md)
