@@ -103,7 +103,6 @@ window.mappingFacebookAttributes = {
   bindSubmit: function (context) {
     return function submit (form) {
       form.addEventListener('submit', function (event) {
-        debugger;
         var isActionToSignup = context.isActionToSignup(this);
 
         if (this.checkValidity()) {
