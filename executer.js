@@ -16,9 +16,9 @@ function executer (callback, when, stop, frequency) {
   stop = (typeof stop === 'function' && stop) || function () { return true; };
   when = (typeof when === 'function' && when) || function () { return true; };
   var interval = setInterval(function handlerInterval() {
-    var resultOfWhenFunction = when();
+    var resultOfWhenFunction = when(currentExecution);
     if (resultOfWhenFunction) {
-      callback();
+      callback(resultOfWhenFunction, currentExecution);
     }
     if (stop(currentExecution, resultOfWhenFunction)) {
       clearInterval(interval);
